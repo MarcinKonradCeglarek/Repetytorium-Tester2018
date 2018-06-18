@@ -1,0 +1,33 @@
+Misc//
+
+
+git status - status
+
+history -c - clear commands history
+
+clear - clear console
+
+git checkout - change branch
+
+
+File control//
+
+
+git clone - create local copy from remote repo
+
+git pull - pulling change from remote branch
+
+git add . - stages new and modified, without deleted
+
+git push - push changes from local to remote
+
+git branch --set-upstream-to=origin/master DerAd - access your branch
+
+git push -f origin DerAd - force push
+
+
+
+
+
+
+
