@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+* Entry - opis
+=======
 * Entry - opis
 
 *Coverage - jest to pokrycie testami, jakiegoś komponentu lub funkcji
@@ -112,3 +115,4 @@
 *User acceptance testing
 
 *White-box testing - testowanie polegające na znajomości kodu i wnętrza programu przez testera, testowanie jawne
+>>>>>>> 80baa79da32a4a4ee5f4b0d450c3664694bce1e8
