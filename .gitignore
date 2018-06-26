@@ -328,3 +328,5 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+Selenium/SeleniumTests/Runner/chromedriver.exe
+Selenium/SeleniumTests/SeleniumTests/chromedriver.exe

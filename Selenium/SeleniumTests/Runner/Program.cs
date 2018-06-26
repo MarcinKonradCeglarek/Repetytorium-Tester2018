@@ -7,7 +7,7 @@ namespace Runner
     {
         private static void Main(string[] args)
         {
-            CompareImages();
+            SeleniumTests.LoginOnTestPage();
         }
 
         private static void CompareImages()
