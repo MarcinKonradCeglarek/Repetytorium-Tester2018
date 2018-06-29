@@ -10,6 +10,9 @@ namespace PracticalExam.Excercise3
         public static string Reverse(string s)
         {
             throw new NotImplementedException();
+            char[] charArray = str.ToCharArray();
+            Array.Reverse(charArray);
+            return new string (charArray);
         }
     }
 }
