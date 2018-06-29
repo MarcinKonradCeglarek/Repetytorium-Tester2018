@@ -7,9 +7,12 @@ namespace PracticalExam.Excercise3
         /*
          * Napisz metodę, która odwraca stringa (ze stringa może -> eżom)
          */
-        public static string Reverse(string s)
+        public static string Reverse(string str)
         {
-            throw new NotImplementedException();
+            char[] charArray = str.ToCharArray();
+            Array.Reverse(charArray);
+            return new string(charArray);
         }
+
     }
 }
