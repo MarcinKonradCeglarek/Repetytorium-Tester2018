@@ -24,6 +24,32 @@ namespace PracticalExam
             Assert.AreEqual(expected,result);
             // Assert
         }
+
+        [TestCase(true, 1221, TestName = "Test 6 true")]
+        [TestCase(false, 12344567234, TestName = "Test 7 false")]
+        
+        public void X(bool expected, long data)
+        {
+            // Arrange
+            var result = Ex1.IsPalindrome(data);
+            // Act
+            //Ex1.IsPalindrome();
+            Assert.AreEqual(expected, result);
+            // Assert
+        }
+
+        [TestCase(true, 1221, TestName = "Test 8 true")]
+        [TestCase(false, 12344567234, TestName = "Test 9 false")]
+        
+        public void X(bool expected, double data)
+        {
+            // Arrange
+            var result = Ex1.IsPalindrome(data);
+            // Act
+            //Ex1.IsPalindrome();
+            Assert.AreEqual(expected, result);
+            // Assert
+        }
     }
 
     public class Ex1
