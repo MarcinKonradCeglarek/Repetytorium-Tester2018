@@ -11,42 +11,58 @@ namespace PracticalExam
     public class Tests
     {
         [Test]
-        public void X()
+        public void Test1()
         {
-            // Arrange
-
-            // Act
-            //Ex1.IsPalindrome();
-
-            // Assert
-        }
-    }
-
-    public class Ex1
-    {
-        public static bool IsPalindrome(double a)
-        {
-            return IsPalindrome(a.ToString(CultureInfo.InvariantCulture));
+            var result = Ex1.IsPalindrome(20202);
+            Assert.AreEqual(true, result);
         }
 
-        public static bool IsPalindrome(long a)
+        [Test]
+        public void Test2()
         {
-            return IsPalindrome(a.ToString());
+            var result = Ex1.IsPalindrome(2025);
+            Assert.AreEqual(false, result);
         }
 
-        public static bool IsPalindrome(string s)
+        [Test]
+        public void Test3()
         {
-            for (var i = 0; i < s.Length / 2; i++)
+            var result = Ex1.IsPalindrome(0);
+            Assert.AreEqual(true, result);
+        }
+
+        [Test]
+        public void Test4()
+        {
+            var result = Ex1.IsPalindrome(45454545);
+            Assert.AreEqual(false, result);
+        }
+
+        public class Ex1
+        {
+            public static bool IsPalindrome(double a)
             {
-                if (s[i] != s[s.Length - 1 - i])
-                {
-                    return false;
-                }
+                return IsPalindrome(a.ToString(CultureInfo.InvariantCulture));
             }
 
-            return true;
+            public static bool IsPalindrome(long a)
+            {
+                return IsPalindrome(a.ToString());
+            }
+
+            public static bool IsPalindrome(string s)
+            {
+                for (var i = 0; i < s.Length / 2; i++)
+                {
+                    if (s[i] != s[s.Length - 1 - i])
+                    {
+                        return false;
+                    }
+                }
+
+                return true;
+            }
         }
     }
-
 
 }
