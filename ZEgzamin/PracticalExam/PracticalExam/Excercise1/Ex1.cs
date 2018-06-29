@@ -11,14 +11,31 @@ namespace PracticalExam
     public class Tests
     {
         [Test]
-        public void X()
+        public void Test1()
         {
-            // Arrange
+            var result = Ex1.IsPalindrome(1111);
+            Assert.AreEqual(true, result);
+        }
+        
+        [Test]
+        public void Test2()
+        {
+            var result = Ex1.IsPalindrome(0);
+            Assert.AreEqual(true, result);
+        }
 
-            // Act
-            //Ex1.IsPalindrome();
+        [Test]
+        public void Test3()
+        {
+            var result = Ex1.IsPalindrome(11111111111111111111);
+            Assert.AreEqual(false, result);
+        }
 
-            // Assert
+        [Test]
+        public void Test4()
+        {
+            var result = Ex1.IsPalindrome(-505);
+            Assert.AreEqual(false, result);
         }
     }
 
