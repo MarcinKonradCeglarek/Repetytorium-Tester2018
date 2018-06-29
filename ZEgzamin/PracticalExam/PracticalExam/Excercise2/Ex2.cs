@@ -18,6 +18,7 @@ namespace PracticalExam
         public void ReadData()
         {
             var result = Ex2.ReadData();
+            
         }
     }
 
