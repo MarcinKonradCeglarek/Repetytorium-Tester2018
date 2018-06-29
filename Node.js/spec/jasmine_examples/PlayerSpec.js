@@ -7,10 +7,6 @@ describe("Player", function() {
   beforeEach(function() {
     player = new Player();
     song = new Song();
-<<<<<<< HEAD
-=======
-    song2 = new Song();
->>>>>>> 58b3c3abd44976f254df1ae1997df5dc5b148b11
   });
 
   it("should be able to play a Song", function() {
@@ -37,11 +33,7 @@ describe("Player", function() {
     it("should be possible to resume", function() {
       player.resume();
       expect(player.isPlaying).toBeTruthy();
-<<<<<<< HEAD
       expect(player.currentlyPlayingSong).toEqual(song);
-=======
-      expect(player.currentlyPlayingSong).toEqual(song2);
->>>>>>> 58b3c3abd44976f254df1ae1997df5dc5b148b11
     });
   });
 
