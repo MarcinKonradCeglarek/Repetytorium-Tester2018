@@ -10,14 +10,44 @@ namespace PracticalExam
     [TestFixture]
     public class Tests
     {
-        [Test]
-        public void X()
+        [TestCase (true, "1221", TestName = "Test 1 true")]
+        [TestCase(true, "ala", TestName = "Test 2 true")]
+        [TestCase(false, "", TestName = "Test 3 false")]
+        [TestCase(false, "12344567234", TestName = "Test 4 false")]
+        [TestCase(false, "11111112222222222333333333333555555555555555555", TestName = "Test 5 false")]
+        public void X(bool expected, string data)
         {
             // Arrange
-
+            var result = Ex1.IsPalindrome(data);
             // Act
             //Ex1.IsPalindrome();
+            Assert.AreEqual(expected,result);
+            // Assert
+        }
 
+        [TestCase(true, 1221, TestName = "Test 6 true")]
+        [TestCase(false, 12344567234, TestName = "Test 7 false")]
+        
+        public void X(bool expected, long data)
+        {
+            // Arrange
+            var result = Ex1.IsPalindrome(data);
+            // Act
+            //Ex1.IsPalindrome();
+            Assert.AreEqual(expected, result);
+            // Assert
+        }
+
+        [TestCase(true, 1221, TestName = "Test 8 true")]
+        [TestCase(false, 12344567234, TestName = "Test 9 false")]
+        
+        public void X(bool expected, double data)
+        {
+            // Arrange
+            var result = Ex1.IsPalindrome(data);
+            // Act
+            //Ex1.IsPalindrome();
+            Assert.AreEqual(expected, result);
             // Assert
         }
     }
